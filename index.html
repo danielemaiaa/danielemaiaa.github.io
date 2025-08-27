@@ -1,152 +1,697 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniele Maia Araújo - Apresentação Portfólio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>Daniele Maia - CX Leader & Project Manager | Driving Customer Success at Scale</title>
+    <meta name="title" content="Daniele Maia - Customer Experience & Project Management Leader">
+    <meta name="description" content="Bilingual CX Leader and Project Manager with 5+ years at Nubank & Santander. Proven track record: 30% faster processes, 20% efficiency gains, 200+ team members coached.">
+    <meta name="keywords" content="customer experience, project management, CX leader, agile, scrum, fintech, nubank, santander, international">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniele Maia - CX Leader & Project Manager">
+    <meta property="og:description" content="Customer Experience Leader driving measurable business impact in fintech and banking sectors.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@0.263.1/dist/umd/lucide.js" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary-color: #8b5cf6;
+            --secondary-color: #7c3aed;
+            --accent-color: #a78bfa;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-accent: #faf5ff;
+            --border-color: #e5e7eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --text-primary: #f9fafb;
+            --text-secondary: #d1d5db;
+            --text-light: #9ca3af;
+            --bg-primary: #111827;
+            --bg-secondary: #1f2937;
+            --bg-accent: #374151;
+            --border-color: #374151;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --sage: #9CAF88;
-            --sage-dark: #7A8A6B;
-            --sage-light: #B8C7A8;
-            --cream: #F7F5F0;
-            --warm-beige: #E8E0D4;
-            --warm-gray: #6B6355;
-            --warm-gray-light: #8A7F73;
-            --soft-brown: #A0957D;
-            --white: #FEFEFE;
-            --shadow: rgba(156, 175, 136, 0.15);
-            --accent: #C8A882;
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'DM Sans', sans-serif;
-            background: var(--cream);
-            overflow: hidden;
-            color: var(--warm-gray);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            transition: all 0.3s ease;
+            overflow-x: hidden;
         }
 
-        .presentation-container {
-            width: 100vw;
-            height: 100vh;
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: top 0.3s;
+            z-index: 9999;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        [data-theme="dark"] nav {
+            background: rgba(17, 24, 39, 0.95);
+        }
+
+        nav.scrolled {
+            box-shadow: var(--shadow-md);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.3s ease;
             position: relative;
         }
 
-        .slide {
-            display: none;
-            width: 100%;
-            height: 100%;
-            padding: 80px 60px;
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
             position: absolute;
-            top: 0;
+            bottom: -4px;
             left: 0;
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
         }
 
-        .slide.active {
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        .theme-toggle:hover {
+            color: var(--primary-color);
+            background: var(--bg-accent);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            opacity: 1;
-            transform: translateX(0);
+            background: var(--gradient-primary);
+            color: white;
+            position: relative;
+            overflow: hidden;
         }
 
-        .slide.prev {
-            transform: translateX(-50px);
-        }
-
-        /* Organic background patterns with enhanced animations */
-        .slide::before {
+        .hero::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
-                radial-gradient(circle at 20% 80%, var(--sage-light) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, var(--warm-beige) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, var(--accent) 0%, transparent 30%);
-            opacity: 0.2;
-            z-index: -1;
-            animation: float 20s ease-in-out infinite;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ffffff;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%23ffffff;stop-opacity:0" /></linearGradient></defs><circle cx="200" cy="100" r="3" fill="%23ffffff" opacity="0.3"/><circle cx="800" cy="200" r="2" fill="%23ffffff" opacity="0.2"/><circle cx="1000" cy="150" r="4" fill="%23ffffff" opacity="0.1"/><circle cx="400" cy="300" r="2" fill="%23ffffff" opacity="0.3"/></svg>') no-repeat center/cover;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(2deg); }
-        }
-
-        /* Enhanced slide backgrounds */
-        .slide-1 {
-            background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 50%, var(--soft-brown) 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .slide-2, .slide-4, .slide-6 {
-            background: linear-gradient(135deg, var(--cream) 0%, #F9F7F2 100%);
-            color: var(--warm-gray);
-        }
-
-        .slide-3, .slide-5 {
-            background: linear-gradient(135deg, var(--warm-gray) 0%, var(--sage-dark) 50%, var(--soft-brown) 100%);
-            color: var(--white);
-        }
-
-        .slide-7 {
-            background: linear-gradient(135deg, var(--sage) 0%, var(--accent) 50%, var(--soft-brown) 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        /* Enhanced typography with better hierarchy */
-        .slide-title {
-            font-family: 'Inter', sans-serif;
-            font-size: 3.2rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            animation: fadeInUp 1s ease-out 0.3s both;
-        }
-
-        .slide-subtitle {
-            font-size: 1.6rem;
-            font-weight: 400;
-            opacity: 0.85;
-            margin-bottom: 2rem;
-            line-height: 1.4;
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
-
-        /* Slide content padronizado - altura uniforme */
-        .slide-content {
+        .hero-container {
             max-width: 1200px;
-            width: 100%;
-            animation: fadeInUp 1s ease-out 0.9s both;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 70vh;
-            min-height: 500px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
         }
 
-        .slide-content.centered {
-            align-items: center;
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item {
             text-align: center;
         }
 
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .hero-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            color: white;
+            margin: 0 auto;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--bg-accent);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--bg-secondary);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .value-props {
+            list-style: none;
+        }
+
+        .value-props li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--bg-primary);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .value-props .icon {
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transform: translateX(-5px);
+        }
+
+        .timeline-content {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .timeline-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .timeline-company {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .timeline-period {
+            background: var(--bg-accent);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .achievements {
+            list-style: none;
+        }
+
+        .achievements li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem 0;
+        }
+
+        .achievements .icon {
+            color: var(--success-color);
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-tag {
+            background: var(--bg-accent);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: var(--bg-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .skill-category .icon {
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            background: var(--bg-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* Achievements Section */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .achievement-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-primary);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .achievement-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .achievement-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--bg-secondary);
+        }
+
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item .icon {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -158,1120 +703,890 @@
             }
         }
 
-        /* Premium cards with enhanced hover effects */
-        .card {
-            background: var(--white);
-            border-radius: 24px;
-            padding: 2.5rem;
-            box-shadow: 0 8px 32px var(--shadow);
-            margin: 1rem 0;
-            border: 1px solid rgba(156, 175, 136, 0.1);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-            overflow: hidden;
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s ease;
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
         }
 
-        .card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 60px rgba(156, 175, 136, 0.25);
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        .card:hover::before {
-            left: 100%;
-        }
-
-        .dark-card {
-            background: rgba(254, 254, 254, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        /* Enhanced grid layouts - Padronizados */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
-            margin-top: 2rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem;
-            margin-top: 2rem;
-        }
-
-        /* Enhanced achievement cards with counter animation */
-        .achievement {
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-        }
-
-        .achievement::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--sage-light), var(--accent));
-            border-radius: 2px;
-            animation: slideIn 1s ease-out;
-        }
-
-        @keyframes slideIn {
-            from { width: 0; }
-            to { width: 60px; }
-        }
-
-        .achievement-number {
-            font-family: 'Inter', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: var(--sage-light);
-            margin: 1rem 0 0.5rem 0;
-            letter-spacing: -0.02em;
-            text-shadow: 0 2px 10px rgba(156, 175, 136, 0.3);
-        }
-
-        .achievement-text {
-            font-size: 1rem;
-            line-height: 1.5;
-            opacity: 0.9;
-        }
-
-        /* Enhanced skill tags with micro-interactions */
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 1.5rem;
-        }
-
-        .skill-tag {
-            background: var(--warm-beige);
-            color: var(--warm-gray);
-            padding: 0.6rem 1.2rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid rgba(156, 175, 136, 0.2);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .skill-tag::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, var(--sage-light), var(--sage));
-            transition: left 0.3s ease;
-            z-index: -1;
-        }
-
-        .skill-tag:hover {
-            color: var(--white);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(156, 175, 136, 0.3);
-        }
-
-        .skill-tag:hover::before {
-            left: 0;
-        }
-
-        .skill-tag.dark {
-            background: rgba(255, 255, 255, 0.15);
-            color: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* Enhanced project cards - mais compactas */
-        .project {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 1.8rem;
-            margin: 1rem 0;
-            box-shadow: 0 6px 30px var(--shadow);
-            border-left: 4px solid var(--sage);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, var(--sage-light) 0%, transparent 70%);
-            opacity: 0.1;
-            transform: translateX(50px) translateY(-50px);
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(156, 175, 136, 0.2);
-            border-left-width: 8px;
-        }
-
-        .project-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .project-icon {
-            font-size: 1.8rem;
-            margin-right: 1rem;
-            padding: 0.6rem;
-            background: linear-gradient(135deg, var(--warm-beige), var(--sage-light));
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-
-        .project:hover .project-icon {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--sage-dark);
-        }
-
-        .project-details {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .project-detail {
-            background: var(--cream);
-            padding: 1.2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(156, 175, 136, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .project-detail:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px var(--shadow);
-        }
-
-        .project-detail h4 {
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .project-detail p {
-            line-height: 1.5;
-            font-size: 0.9rem;
-            color: var(--warm-gray);
-            font-weight: 500;
-        }
-
-        .challenge { 
-            color: var(--soft-brown); 
-            background: rgba(160, 149, 125, 0.1);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        .solution { 
-            color: var(--sage-dark); 
-            background: rgba(122, 138, 107, 0.1);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        .impact { 
-            color: var(--sage); 
-            background: rgba(156, 175, 136, 0.1);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            display: inline-block;
-        }
-
-        /* Enhanced navigation with better UX */
-        .nav-container {
-            position: fixed;
-            bottom: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 1rem;
-            z-index: 1000;
-        }
-
-        .nav-btn {
-            background: rgba(254, 254, 254, 0.95);
-            border: 1px solid var(--sage-light);
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.2rem;
-            color: var(--sage-dark);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(15px);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav-btn::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: var(--sage);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
-
-        .nav-btn:hover {
-            color: var(--white);
-            transform: scale(1.1);
-            box-shadow: 0 8px 30px rgba(156, 175, 136, 0.3);
-        }
-
-        .nav-btn:hover::before {
-            width: 100%;
-            height: 100%;
-        }
-
-        .nav-btn:active {
-            transform: scale(0.95);
-        }
-
-        /* Enhanced slide counter */
-        .slide-counter {
-            position: fixed;
-            top: 2.5rem;
-            right: 2.5rem;
-            background: rgba(254, 254, 254, 0.95);
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            color: var(--sage-dark);
-            font-weight: 600;
-            z-index: 1000;
-            border: 1px solid var(--sage-light);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 4px 20px rgba(156, 175, 136, 0.1);
-        }
-
-        /* Enhanced icon grid - redimensionado */
-        .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .icon-card {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: 0 4px 20px var(--shadow);
-            border: 1px solid rgba(156, 175, 136, 0.1);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .icon-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--sage), var(--accent));
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .icon-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(156, 175, 136, 0.2);
-        }
-
-        .icon-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .icon-card .emoji {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
-            transition: transform 0.3s ease;
-        }
-
-        .icon-card:hover .emoji {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .icon-card .label {
-            font-weight: 600;
-            color: var(--sage-dark);
-            font-size: 0.85rem;
-        }
-
-        /* Enhanced contact info */
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-            margin-top: 2rem;
-            opacity: 0.9;
-            font-size: 0.95rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-info span {
-            padding: 0.7rem 1.3rem;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 25px;
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .contact-info span:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-        }
-
-        .contact-info a {
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: var(--cream);
-            text-shadow: 0 2px 8px rgba(255,255,255,0.3);
-        }
-
-        /* Enhanced CTA button */
-        .cta-button {
-            background: linear-gradient(135deg, var(--white), var(--cream));
-            color: var(--sage-dark);
-            border: none;
-            padding: 1.5rem 3rem;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            margin: 2.5rem 0;
-            box-shadow: 0 8px 30px rgba(156, 175, 136, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 15px 50px rgba(156, 175, 136, 0.4);
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        /* Enhanced highlight boxes - compactas */
-        .highlight-box {
-            background: var(--white);
-            border-left: 4px solid var(--sage);
-            padding: 1.5rem;
-            border-radius: 0 12px 12px 0;
-            margin: 1rem 0;
-            box-shadow: 0 4px 20px var(--shadow);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .highlight-box::after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 6px;
-            height: 6px;
-            background: var(--sage-light);
-            border-radius: 50%;
-            opacity: 0.6;
-        }
-
-        .highlight-box:hover {
-            border-left-width: 8px;
-            transform: translateX(5px);
-        }
-
-        .highlight-box.dark {
-            background: rgba(255, 255, 255, 0.1);
-            border-left: 4px solid var(--sage-light);
-            backdrop-filter: blur(10px);
-        }
-
-        /* Progress indicators for slides */
-        .progress-container {
-            position: fixed;
-            bottom: 120px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
-            z-index: 1000;
-        }
-
-        .progress-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(156, 175, 136, 0.3);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .progress-dot.active {
-            background: var(--sage);
-            transform: scale(1.2);
-        }
-
-        /* Enhanced responsive design */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .slide {
-                padding: 2rem 1.5rem;
+            .nav-links {
+                display: none;
             }
-            
-            .slide-title {
-                font-size: 2.5rem;
+
+            .mobile-menu-toggle {
+                display: block;
             }
-            
-            .slide-subtitle {
-                font-size: 1.3rem;
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
             }
-            
-            .grid-2, .grid-3, .grid-4 {
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .about-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
-            .project-details {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
+
+            .timeline-item {
+                padding-left: 1rem;
             }
 
-            .icon-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
+            .timeline-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-image {
+                width: 250px;
+                height: 250px;
+                font-size: 6rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-container {
+                padding: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+                font-size: 5rem;
             }
 
             .contact-info {
                 flex-direction: column;
-                gap: 1rem;
                 align-items: center;
             }
-
-            .nav-btn {
-                width: 50px;
-                height: 50px;
-            }
-
-            .slide-counter {
-                top: 1.5rem;
-                right: 1.5rem;
-                padding: 0.6rem 1.2rem;
-                font-size: 0.8rem;
-            }
-
-            .nav-container {
-                bottom: 1.5rem;
-            }
         }
 
-        /* Loading animation */
-        .slide.loading {
-            animation: slideLoad 0.8s ease-out;
+        /* Focus styles for accessibility */
+        .focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
         }
 
-        @keyframes slideLoad {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
+        /* Print styles */
+        @media print {
+            nav, .hero-cta, .social-links {
+                display: none !important;
             }
-            to {
-                opacity: 1;
-                transform: scale(1);
+            
+            body {
+                color: black !important;
+                background: white !important;
             }
         }
     </style>
 </head>
 <body>
-    <div class="presentation-container">
-        <!-- Slide Counter -->
-        <div class="slide-counter">
-            <span id="currentSlide">1</span> / 7
-        </div>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <!-- Progress Indicators -->
-        <div class="progress-container">
-            <div class="progress-dot active" onclick="goToSlide(0)"></div>
-            <div class="progress-dot" onclick="goToSlide(1)"></div>
-            <div class="progress-dot" onclick="goToSlide(2)"></div>
-            <div class="progress-dot" onclick="goToSlide(3)"></div>
-            <div class="progress-dot" onclick="goToSlide(4)"></div>
-            <div class="progress-dot" onclick="goToSlide(5)"></div>
-            <div class="progress-dot" onclick="goToSlide(6)"></div>
-        </div>
-
-        <!-- Navigation -->
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <button class="nav-btn" onclick="previousSlide()" aria-label="Slide anterior">‹</button>
-            <button class="nav-btn" onclick="nextSlide()" aria-label="Próximo slide">›</button>
+            <a href="#" class="nav-logo">Daniele Maia</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
         </div>
+    </nav>
 
-        <!-- Slide 1: Capa -->
-        <div class="slide slide-1 active">
-            <div class="slide-content centered">
-                <div style="font-size: 4rem; margin-bottom: 1.5rem; opacity: 0.9; animation: pulse 2s ease-in-out infinite;">🌱</div>
-                <h1 class="slide-title">Daniele Maia Araújo</h1>
-                <h2 class="slide-subtitle">Especialista em Customer Experience, Dados e Operações</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 3rem; font-weight: 400; opacity: 0.9; max-width: 600px; line-height: 1.5;">
-                    Transformando dados em experiências excepcionais e resultados escaláveis através de estratégia e liderança analítica
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">5+ Years Leading CX & Operations Excellence</div>
+                <h1>Turning Customer Experience Into Competitive Advantage</h1>
+                <p class="hero-tagline">
+                    Bilingual CX Leader & Project Manager specializing in fintech operations, 
+                    team leadership, and process optimization. Proven track record of driving 
+                    efficiency gains and customer satisfaction at scale.
                 </p>
-                <div class="contact-info">
-                    <span>📧 daniele.maia.a@gmail.com</span>
-                    <span><a href="https://www.linkedin.com/in/daniele-maia-araujo/" target="_blank" rel="noopener">💼 LinkedIn</a></span>
-                    <span>📱 (11) 98515-4511</span>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">Faster Processes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Team Members Coached</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20%</span>
+                        <span class="stat-label">Efficiency Gains</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        Explore My Impact
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-calendar" aria-hidden="true"></i>
+                        Schedule a Call
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <i class="fas fa-user-tie" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Slide 2: Sobre mim -->
-        <div class="slide slide-2">
-            <div class="slide-content">
-                <h2 class="slide-title" style="color: var(--sage-dark); text-align: center; margin-bottom: 2rem;">Sobre mim</h2>
-                <div class="grid-2" style="align-items: stretch;">
-                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div class="highlight-box">
-                            <p style="font-size: 1rem; line-height: 1.5;">
-                                <strong style="color: var(--sage-dark);">Líder de times multidisciplinares</strong> com sólida experiência em <strong style="color: var(--sage-dark);">Customer Experience e Operações</strong>, atuando em fintechs e techs como <strong style="color: var(--sage-dark);">Nubank e Santander</strong>.
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge">Who I Am</div>
+                    <h2 class="section-title">Bridging Strategy with Flawless Execution</h2>
+                    <p class="section-subtitle">
+                        A results-driven professional who combines deep customer experience expertise 
+                        with strong project management skills to deliver measurable business impact.
+                    </p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <p>
+                            Based in São Paulo, I'm a Customer Experience Leader and Project Manager 
+                            with over 5 years of experience in fintech and banking sectors. My journey 
+                            from CX Analyst to Project Manager at Nubank, followed by my current role 
+                            as Governance Specialist at Santander, has equipped me with a unique 
+                            perspective on scaling operations while maintaining customer-centricity.
+                        </p>
+                        <p>
+                            I specialize in building and leading remote teams, implementing process 
+                            optimizations that drive efficiency, and ensuring seamless project delivery 
+                            across multiple stakeholders. My multilingual capabilities (Portuguese, 
+                            English, Spanish, French) enable me to excel in international environments 
+                            and cross-cultural team dynamics.
+                        </p>
+                        <p>
+                            Currently pursuing continuous learning through my Postgraduate in Digital Business 
+                            (USP) and recently completed Project Management certification (FGV), I'm passionate 
+                            about leveraging data-driven insights to transform customer journeys and operational workflows.
+                        </p>
+                    </div>
+                    <div class="value-props fade-in">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-users" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <strong>Team Leadership</strong><br>
+                                    Led 24/7 remote support teams with consistent SLA adherence and high performance metrics
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <strong>Process Optimization</strong><br>
+                                    Implemented automation initiatives resulting in 15-20% operational efficiency improvements
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <strong>Global Perspective</strong><br>
+                                    Multilingual professional with experience in Latin American and international markets
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <strong>Data-Driven Approach</strong><br>
+                                    Leveraged SQL, Looker, and Power BI for strategic analysis and executive reporting
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge">Professional Journey</div>
+                    <h2 class="section-title">Driving Results Through Strategic Leadership</h2>
+                    <p class="section-subtitle">
+                        From customer-facing operations to governance and process management, 
+                        delivering measurable impact across fintech and banking sectors.
+                    </p>
+                </div>
+                <div class="experience-timeline">
+                    <!-- Current Position: Santander -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Governance Specialist - Process Management & CX</h3>
+                                    <p class="timeline-company">Santander Bank</p>
+                                </div>
+                                <div class="timeline-period">Oct 2024 - Present</div>
+                            </div>
+                            <p class="timeline-description">
+                                <strong>Situation:</strong> Leading the rollout of new retail operations targeting SMB clients, 
+                                requiring alignment across sales, product, and compliance teams in a highly regulated environment.
                             </p>
-                        </div>
-                        <div class="highlight-box">
-                            <p style="font-size: 1rem; line-height: 1.5;">
-                                Especialista em <strong style="color: var(--sage-dark);">gestão ágil de projetos</strong>, dados e automação. Expertise na aplicação dos princípios <strong style="color: var(--sage-dark);">Lean, Scrum e Kanban</strong> para otimizar fluxos e promover entregas contínuas de valor.
+                            <p class="timeline-description">
+                                <strong>Task:</strong> Ensure seamless governance, documentation, and cross-functional communication 
+                                while maintaining regulatory compliance and project visibility for senior management.
                             </p>
-                        </div>
-                        <div class="highlight-box">
-                            <p style="font-size: 1rem; line-height: 1.5;">
-                                <strong style="color: var(--sage-dark);">Pós-graduada pela USP</strong> em Negócios Digitais. Atuação internacional <strong style="color: var(--sage-dark);">(Brasil, Colômbia)</strong> com fluência em inglês e espanhol.
+                            <p class="timeline-description">
+                                <strong>Action & Results:</strong>
                             </p>
+                            <ul class="achievements">
+                                <li>
+                                    <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                    Coordinated multi-team operations for SMB client rollout, ensuring alignment across sales, product, and compliance functions
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                    <strong>Reduced approval delays by 20%</strong> through implementation of structured reporting processes
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                    Enhanced cross-functional communication workflows, improving project visibility and stakeholder engagement
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                    Collaborated with senior management on KPI tracking, ensuring consistent milestone achievement and deadline compliance
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Microsoft Excel</span>
+                                <span class="tech-tag">PowerPoint</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Power Automate</span>
+                                <span class="tech-tag">Process Management</span>
+                                <span class="tech-tag">Governance</span>
+                            </div>
                         </div>
                     </div>
-                    <div style="display: flex; flex-direction: column; justify-content: center;">
-                        <div class="icon-grid">
-                            <div class="icon-card">
-                                <div class="emoji">📊</div>
-                                <div class="label">CX & Dados</div>
+
+                    <!-- Nubank Experience -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Customer Experience Project Manager</h3>
+                                    <p class="timeline-company">Nubank (Latin America's Largest Fintech)</p>
+                                </div>
+                                <div class="timeline-period">Aug 2018 - Apr 2023</div>
                             </div>
-                            <div class="icon-card">
-                                <div class="emoji">🤖</div>
-                                <div class="label">Automação</div>
+                            <p class="timeline-description">
+                                <strong>Career Progression:</strong> Started as Customer Experience Analyst and was promoted twice 
+                                to achieve Project Manager role, developing comprehensive CX knowledge and management skills.
+                            </p>
+                            
+                            <!-- Project Manager Role -->
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">As Project Manager (2021-2023):</h4>
+                                <p class="timeline-description">
+                                    <strong>Situation:</strong> Managing 24/7 remote support operations for millions of customers 
+                                    while scaling team performance and implementing process improvements across multiple channels.
+                                </p>
+                                <ul class="achievements">
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        <strong>Led 24/7 remote support team of 7+</strong> achieving consistent SLA adherence and high performance metrics
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        <strong>Improved operational efficiency by 15%</strong> through process automation initiatives and workflow optimization
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Coordinated centralized documentation and project tracking across Google Workspace, Jira, and Slack
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        <strong>Increased CSAT scores</strong> through structured coaching programs and team engagement initiatives
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Successfully led operational integration of NuInvest, streamlining processes across multiple squads and channels
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="icon-card">
-                                <div class="emoji">🎯</div>
-                                <div class="label">UX & Agile</div>
+
+                            <!-- Senior CX Analyst Role -->
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">As Senior Customer Experience Analyst (2020-2021):</h4>
+                                <ul class="achievements">
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Acted as key liaison between clients, internal teams, and external partners for seamless project coordination
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Led CX benchmarking projects and piloted <strong>Voice of the Customer (VoC) programs</strong>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        <strong>Trained 200+ agents</strong> using PDCA cycles in onboarding, resulting in measurable service quality improvement
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Conducted strategic data analysis for executive reporting, contributing to data-driven decision making
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="icon-card">
-                                <div class="emoji">🌎</div>
-                                <div class="label">LATAM</div>
+
+                            <!-- International Experience -->
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">International Experience - Nu Colombia:</h4>
+                                <ul class="achievements">
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        <strong>Reduced recruitment processing time by 30%</strong> by enhancing international candidate onboarding
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle icon" aria-hidden="true"></i>
+                                        Developed communication frameworks ensuring consistency across hiring channels in international market
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Databricks</span>
+                                <span class="tech-tag">Looker</span>
+                                <span class="tech-tag">Google Workspace</span>
+                                <span class="tech-tag">Jira</span>
+                                <span class="tech-tag">Zendesk</span>
+                                <span class="tech-tag">Slack</span>
+                                <span class="tech-tag">Trello</span>
+                                <span class="tech-tag">Twilio</span>
+                                <span class="tech-tag">Greenhouse</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Slide 3: Principais Conquistas -->
-        <div class="slide slide-3">
-            <div class="slide-content centered">
-                <h2 class="slide-title" style="text-align: center; margin-bottom: 1rem;">Principais Conquistas</h2>
-                <p class="slide-subtitle" style="text-align: center; margin-bottom: 3rem;">Resultados que geram valor real e impacto mensurável</p>
-                
-                <div class="grid-4">
-                    <div class="card dark-card achievement">
-                        <div class="achievement-number">98%</div>
-                        <div class="achievement-text">Liderança de equipe 24/7 no Nubank mantendo <strong>98% de SLA</strong> com performance consistente</div>
-                    </div>
-                    
-                    <div class="card dark-card achievement">
-                        <div class="achievement-number">30%</div>
-                        <div class="achievement-text">Reduzi tempo de análise e relatórios em <strong>30%</strong> com automação Power BI no Santander</div>
-                    </div>
-                    
-                    <div class="card dark-card achievement">
-                        <div class="achievement-number">25%</div>
-                        <div class="achievement-text">Aumentei o engajamento da equipe em <strong>25%</strong> com feedbacks estruturados e reuniões 1:1</div>
-                    </div>
-                    
-                    <div class="card dark-card achievement">
-                        <div class="achievement-number">20%</div>
-                        <div class="achievement-text">Reduzi reclamações em órgãos reguladores em <strong>20%</strong> com pesquisa NPS e ciclos VoC</div>
-                    </div>
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge">Expertise</div>
+                    <h2 class="section-title">Technical Skills & Methodologies</h2>
+                    <p class="section-subtitle">
+                        Comprehensive toolkit combining project management frameworks, 
+                        customer experience methodologies, and data analytics capabilities.
+                    </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Slide 4: Competências -->
-        <div class="slide slide-4">
-            <div class="slide-content">
-                <h2 class="slide-title" style="color: var(--sage-dark); text-align: center; margin-bottom: 3rem;">Competências e Diferenciais</h2>
-                
-                <div class="grid-2">
-                    <div class="card">
-                        <h3 style="color: var(--sage-dark); font-size: 1.6rem; margin-bottom: 2rem; display: flex; align-items: center;">
-                            <span style="margin-right: 0.8rem; background: var(--warm-beige); padding: 0.5rem; border-radius: 10px;">🔧</span> 
-                            Hard Skills
+                <div class="skills-grid">
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                            </div>
+                            Project Management
                         </h3>
                         <div class="skill-list">
-                            <div class="skill-tag">📊 Power BI & Analytics</div>
-                            <div class="skill-tag">💾 SQL & Databricks</div>
-                            <div class="skill-tag">🤖 Power Automate (RPA)</div>
-                            <div class="skill-tag">📋 Gestão Ágil (Scrum/Kanban)</div>
-                            <div class="skill-tag">⚡ Lean & PDCA</div>
-                            <div class="skill-tag">🔄 Looker & Zendesk</div>
-                            <div class="skill-tag">🛠️ Jira & Atlassian</div>
-                            <div class="skill-tag">📈 Métricas (NPS, SLA, KPIs)</div>
+                            <span class="skill-item">Agile (Scrum/Kanban)</span>
+                            <span class="skill-item">Workflow Management</span>
+                            <span class="skill-item">Process Optimization</span>
+                            <span class="skill-item">Governance Models</span>
+                            <span class="skill-item">Timeline Tracking</span>
+                            <span class="skill-item">Stakeholder Communication</span>
+                            <span class="skill-item">Cross-functional Leadership</span>
                         </div>
                     </div>
-                    
-                    <div class="card">
-                        <h3 style="color: var(--sage-dark); font-size: 1.6rem; margin-bottom: 2rem; display: flex; align-items: center;">
-                            <span style="margin-right: 0.8rem; background: var(--warm-beige); padding: 0.5rem; border-radius: 10px;">💡</span> 
-                            Soft Skills
+
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </div>
+                            Customer Experience
                         </h3>
                         <div class="skill-list">
-                            <div class="skill-tag">👥 Liderança de equipes multidisciplinares</div>
-                            <div class="skill-tag">🎯 Visão estratégica & governança</div>
-                            <div class="skill-tag">💬 Comunicação cross-functional</div>
-                            <div class="skill-tag">🌎 Atuação internacional (fluente inglês e espanhol)</div>
-                            <div class="skill-tag">🧩 Resolução autônoma de problemas</div>
-                            <div class="skill-tag">📈 Facilitação e mentoria</div>
-                            <div class="skill-tag">❤️ Customer Experience (VoC)</div>
+                            <span class="skill-item">Voice of Customer (VoC)</span>
+                            <span class="skill-item">NPS Programs</span>
+                            <span class="skill-item">Journey Mapping</span>
+                            <span class="skill-item">CX Quality Assurance</span>
+                            <span class="skill-item">Customer Relationship Management</span>
+                            <span class="skill-item">Crisis Management</span>
+                            <span class="skill-item">Escalation Handling</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                            </div>
+                            Data & Analytics
+                        </h3>
+                        <div class="skill-list">
+                            <span class="skill-item">SQL</span>
+                            <span class="skill-item">Databricks</span>
+                            <span class="skill-item">Looker</span>
+                            <span class="skill-item">Power BI</span>
+                            <span class="skill-item">Data Tracking & Reporting</span>
+                            <span class="skill-item">Process Improvement Analytics</span>
+                            <span class="skill-item">Executive Reporting</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            Tools & Platforms
+                        </h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Google Workspace</span>
+                            <span class="skill-item">Microsoft 365</span>
+                            <span class="skill-item">Jira & Atlassian Suite</span>
+                            <span class="skill-item">Zendesk</span>
+                            <span class="skill-item">Notion & ClickUp</span>
+                            <span class="skill-item">Zapier (RPA)</span>
+                            <span class="skill-item">Power Automate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                            </div>
+                            Automation & Optimization
+                        </h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Workflow Automation</span>
+                            <span class="skill-item">RPA Tools</span>
+                            <span class="skill-item">Process Documentation</span>
+                            <span class="skill-item">Quality Assurance</span>
+                            <span class="skill-item">PDCA Methodology</span>
+                            <span class="skill-item">Continuous Improvement</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category fade-in">
+                        <h3>
+                            <div class="icon">
+                                <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                            </div>
+                            Languages & Cultural
+                        </h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Portuguese (Native)</span>
+                            <span class="skill-item">English (C2 - Fluent)</span>
+                            <span class="skill-item">Spanish (C1 - Advanced)</span>
+                            <span class="skill-item">French (B2 - Upper-Int.)</span>
+                            <span class="skill-item">Cross-Cultural Teams</span>
+                            <span class="skill-item">International Markets</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Slide 5: Projetos -->
-        <div class="slide slide-5">
-            <div class="slide-content">
-                <h2 class="slide-title" style="text-align: center; margin-bottom: 2rem;">Projetos de Destaque</h2>
-                
-                <div style="width: 100%; max-width: 1000px; margin: 0 auto;">
-                    <div class="project">
-                        <div class="project-header">
-                            <div class="project-icon">🏦</div>
-                            <div class="project-title">Programa de Qualidade - Santander (2024)</div>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail">
-                                <h4 class="challenge">Desafio:</h4>
-                                <p>Garantir compliance regulatório e qualidade da força de vendas externa</p>
-                            </div>
-                            <div class="project-detail">
-                                <h4 class="solution">Solução:</h4>
-                                <p>Programa de qualidade + pesquisa NPS com ciclos VoC + automação Power BI</p>
-                            </div>
-                            <div class="project-detail">
-                                <h4 class="impact">Impacto:</h4>
-                                <p><strong>100%</strong> compliance + <strong>15%</strong> aumento satisfação + <strong>20%</strong> redução reclamações</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project">
-                        <div class="project-header">
-                            <div class="project-icon">💰</div>
-                            <div class="project-title">Lançamento Novo Rendimento da NuConta - Nubank</div>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-detail">
-                                <h4 class="challenge">Desafio:</h4>
-                                <p>Lançar novo produto financeiro gerenciando riscos reputacionais e garantindo experiência impecável</p>
-                            </div>
-                            <div class="project-detail">
-                                <h4 class="solution">Solução:</h4>
-                                <p>Customer Journey Mapping + VoC insights + metodologia ágil + dashboards estratégicos</p>
-                            </div>
-                            <div class="project-detail">
-                                <h4 class="impact">Impacto:</h4>
-                                <p>Aceleração do <strong>lançamento</strong> + redução <strong>volume contatos</strong> + <strong>CSAT excelente</strong></p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Achievements Section -->
+        <section class="achievements" id="achievements">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge">Measurable Impact</div>
+                    <h2 class="section-title">Results That Drive Business Forward</h2>
+                    <p class="section-subtitle">
+                        Quantified achievements demonstrating consistent ability to deliver 
+                        operational excellence and customer satisfaction improvements.
+                    </p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Slide 6: Fit com Insight IT -->
-        <div class="slide slide-6">
-            <div class="slide-content centered">
-                <h2 class="slide-title" style="color: var(--sage-dark); text-align: center; margin-bottom: 3rem;">Por que a Insight IT?</h2>
-                
-                <div style="max-width: 900px;">
-                    <div class="highlight-box" style="margin-bottom: 2rem; text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Compartilho o mesmo compromisso da Insight IT com <strong style="color: var(--sage-dark);">eficiência, agilidade e foco na experiência do usuário</strong>, pilares fundamentais da minha atuação profissional.
+                <div class="achievements-grid">
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">30%</span>
+                        <h3 class="achievement-label">Process Time Reduction</h3>
+                        <p class="achievement-description">
+                            Enhanced international candidate onboarding at Nubank Colombia, 
+                            streamlining recruitment workflows
                         </p>
                     </div>
-                    
-                    <div class="highlight-box" style="margin-bottom: 2rem; text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Minha experiência analítica e estratégica une <strong style="color: var(--sage-dark);">conhecimento técnico, visão de negócio e capacidade de liderança</strong>, alinhando-se aos desafios de transformação digital que a empresa impulsiona.
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">20%</span>
+                        <h3 class="achievement-label">Approval Delay Reduction</h3>
+                        <p class="achievement-description">
+                            Implemented structured reporting processes at Santander, 
+                            improving cross-functional communication
                         </p>
                     </div>
-                    
-                    <div class="highlight-box" style="text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Acredito que minha bagagem em CX, dados e operações pode contribuir significativamente para <strong style="color: var(--sage-dark);">ampliar o impacto positivo</strong> dos projetos e soluções da Insight IT.
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">15%</span>
+                        <h3 class="achievement-label">Operational Efficiency Gain</h3>
+                        <p class="achievement-description">
+                            Process automation initiatives at Nubank leading to 
+                            significant workflow optimization
+                        </p>
+                    </div>
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">200+</span>
+                        <h3 class="achievement-label">Agents Trained</h3>
+                        <p class="achievement-description">
+                            PDCA-based onboarding programs resulting in measurable 
+                            service quality improvements
+                        </p>
+                    </div>
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">7+</span>
+                        <h3 class="achievement-label">Team Members Led</h3>
+                        <p class="achievement-description">
+                            24/7 remote support team management with consistent 
+                            SLA adherence and performance metrics
+                        </p>
+                    </div>
+                    <div class="achievement-card fade-in">
+                        <span class="achievement-number">5+</span>
+                        <h3 class="achievement-label">Years Experience</h3>
+                        <p class="achievement-description">
+                            Progressive career growth from Analyst to Project Manager 
+                            in leading fintech and banking organizations
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Slide 7: Encerramento -->
-        <div class="slide slide-7">
-            <div class="slide-content centered">
-                <div style="font-size: 3.5rem; margin-bottom: 1.5rem; opacity: 0.9;">🤝</div>
-                <h2 class="slide-title">Vamos conversar?</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9; max-width: 700px; line-height: 1.5;">
-                    Estou à disposição para aprofundarmos a conversa sobre como minha experiência estratégica e analítica pode contribuir com os projetos e desafios da Insight IT.
-                </p>
-                
-                <button class="cta-button" onclick="window.open('mailto:daniele.maia.a@gmail.com?subject=Conversa sobre oportunidades na Insight IT', '_blank')">
-                    Agendamos um bate-papo estratégico?
-                </button>
-                
-                <div class="contact-info">
-                    <span>📧 daniele.maia.a@gmail.com</span>
-                    <span><a href="https://www.linkedin.com/in/daniele-maia-araujo/" target="_blank" rel="noopener">💼 LinkedIn</a></span>
-                    <span>📱 +55 11 985154511</span>
-                </div>
-            </div>
-        </div></p>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content fade-in">
+                    <div class="section-header">
+                        <div class="section-badge">Let's Connect</div>
+                        <h2 class="section-title">Ready to Drive Results Together?</h2>
+                        <p class="section-subtitle">
+                            Looking for opportunities to lead customer experience initiatives, 
+                            optimize operations, or manage complex projects in international environments.
+                        </p>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>
+                            <span>São Paulo, Brazil</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope icon" aria-hidden="true"></i>
+                            <a href="mailto:daniele.maia.a@gmail.com" style="color: inherit; text-decoration: none;">
+                                daniele.maia.a@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone icon" aria-hidden="true"></i>
+                            <a href="tel:+5511985154511" style="color: inherit; text-decoration: none;">
+                                +55 11 985154511
+                            </a>
                         </div>
                     </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/daniele-maia-araujo/" 
+                           class="social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Connect on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:daniele.maia.a@gmail.com" 
+                           class="social-link"
+                           aria-label="Send email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:+5511985154511" 
+                           class="social-link"
+                           aria-label="Call phone number">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="https://linkedin.com/in/daniele-maia-araujo/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            Connect on LinkedIn
+                        </a>
+                        <a href="mailto:daniele.maia.a@gmail.com" 
+                           class="btn btn-secondary">
+                            <i class="fas fa-calendar" aria-hidden="true"></i>
+                            Schedule Discovery Call
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 3rem; padding: 2rem; background: var(--bg-primary); border-radius: 1rem; border: 1px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">
+                            <i class="fas fa-graduation-cap" style="margin-right: 0.5rem;" aria-hidden="true"></i>
+                            Education & Certifications
+                        </h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: left;">
+                            <div>
+                                <strong>Postgraduate in Digital Business</strong><br>
+                                <em>Universidade de São Paulo (USP)</em><br>
+                                2021 - 2023
+                            </div>
+                            <div>
+                                <strong>Bachelor in International Relations</strong><br>
+                                <em>Pontifícia Universidade Católica (PUC-SP)</em><br>
+                                2013 - 2017
+                            </div>
+                            <div>
+                                <strong>Project Management Certification</strong><br>
+                                <em>Fundação Getulio Vargas (FGV)</em><br>
+                                2024
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <!-- Slide 6: Fit com Insight IT -->
-        <div class="slide slide-6">
-            <div class="slide-content">
-                <h2 class="slide-title" style="color: var(--sage-dark); text-align: center; margin-bottom: 3rem;">Por que a Insight IT?</h2>
-                
-                <div style="max-width: 900px; margin: 0 auto;">
-                    <div class="highlight-box" style="margin-bottom: 2rem; text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Compartilho o mesmo compromisso da Insight IT com <strong style="color: var(--sage-dark);">eficiência, agilidade e foco na experiência do usuário</strong>, pilares fundamentais da minha atuação profissional.
-                        </p>
-                    </div>
-                    
-                    <div class="highlight-box" style="margin-bottom: 2rem; text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Minha experiência analítica e estratégica une <strong style="color: var(--sage-dark);">conhecimento técnico, visão de negócio e capacidade de liderança</strong>, alinhando-se aos desafios de transformação digital que a empresa impulsiona.
-                        </p>
-                    </div>
-                    
-                    <div class="highlight-box" style="text-align: center;">
-                        <p style="font-size: 1.2rem; line-height: 1.6;">
-                            Acredito que minha bagagem em CX, dados e operações pode contribuir significativamente para <strong style="color: var(--sage-dark);">ampliar o impacto positivo</strong> dos projetos e soluções da Insight IT.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer style="background: var(--bg-secondary); padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                © 2024 Daniele Maia. Crafted with attention to detail and passion for excellence.
+            </p>
+            <p style="color: var(--text-light); font-size: 0.9rem;">
+                Available for international opportunities in Customer Experience Leadership and Project Management
+            </p>
         </div>
+    </footer>
 
-        <!-- Slide 7: Encerramento -->
-        <div class="slide slide-7">
-            <div class="slide-content">
-                <div style="font-size: 3.5rem; margin-bottom: 1.5rem; opacity: 0.9;">🤝</div>
-                <h2 class="slide-title">Vamos conversar?</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.5;">
-                    Estou à disposição para aprofundarmos a conversa sobre como minha experiência estratégica e analítica pode contribuir com os projetos e desafios da Insight IT.
-                </p>
-                
-                <button class="cta-button" onclick="window.open('mailto:daniele.maia.a@gmail.com?subject=Conversa sobre oportunidades na Insight IT', '_blank')">
-                    Agendamos um bate-papo estratégico?
-                </button>
-                
-                <div class="contact-info">
-                    <span>📧 daniele.maia.a@gmail.com</span>
-                    <span><a href="https://www.linkedin.com/in/daniele-maia-araujo/" target="_blank" rel="noopener">💼 LinkedIn</a></span>
-                    <span>📱 +55 11 985154511</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- JavaScript for Interactivity -->
     <script>
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
-        const progressDots = document.querySelectorAll('.progress-dot');
+        // Theme Toggle Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Set initial theme
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
 
-        function showSlide(index, direction = 'forward') {
-            // Remove active class from all slides and dots
-            slides.forEach(slide => {
-                slide.classList.remove('active');
-                if (direction === 'backward') {
-                    slide.classList.add('prev');
-                } else {
-                    slide.classList.remove('prev');
+        themeToggle.addEventListener('click', () => {
+            const theme = document.documentElement.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+            
+            // Update ARIA pressed state
+            themeToggle.setAttribute('aria-pressed', newTheme === 'dark');
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        }
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
                 }
             });
-            progressDots.forEach(dot => dot.classList.remove('active'));
-            
-            // Add active class to current slide and dot
-            slides[index].classList.add('active');
-            slides[index].classList.add('loading');
-            progressDots[index].classList.add('active');
-            
-            // Remove loading class after animation
-            setTimeout(() => {
-                slides[index].classList.remove('loading');
-            }, 800);
-            
-            // Update counter
-            document.getElementById('currentSlide').textContent = index + 1;
-        }
+        }, observerOptions);
 
-        function nextSlide() {
-            const previousIndex = currentSlideIndex;
-            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
-            showSlide(currentSlideIndex, 'forward');
-        }
-
-        function previousSlide() {
-            const previousIndex = currentSlideIndex;
-            currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlideIndex, 'backward');
-        }
-
-        function goToSlide(index) {
-            const direction = index > currentSlideIndex ? 'forward' : 'backward';
-            currentSlideIndex = index;
-            showSlide(currentSlideIndex, direction);
-        }
-
-        // Enhanced keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            switch(e.key) {
-                case 'ArrowRight':
-                case ' ':
-                case 'PageDown':
-                    e.preventDefault();
-                    nextSlide();
-                    break;
-                case 'ArrowLeft':
-                case 'PageUp':
-                    e.preventDefault();
-                    previousSlide();
-                    break;
-                case 'Home':
-                    e.preventDefault();
-                    goToSlide(0);
-                    break;
-                case 'End':
-                    e.preventDefault();
-                    goToSlide(totalSlides - 1);
-                    break;
-                case 'Escape':
-                    // Optional: Add fullscreen toggle or other functionality
-                    break;
-            }
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
         });
 
-        // Enhanced touch/swipe support
-        let startX = 0;
-        let startY = 0;
-        let endX = 0;
-        let endY = 0;
-        let isSwipeActive = false;
-
-        document.addEventListener('touchstart', function(e) {
-            startX = e.touches[0].clientX;
-            startY = e.touches[0].clientY;
-            isSwipeActive = true;
-        });
-
-        document.addEventListener('touchmove', function(e) {
-            if (!isSwipeActive) return;
-            e.preventDefault(); // Prevent scrolling
-        }, { passive: false });
-
-        document.addEventListener('touchend', function(e) {
-            if (!isSwipeActive) return;
-            
-            endX = e.changedTouches[0].clientX;
-            endY = e.changedTouches[0].clientY;
-            
-            const deltaX = endX - startX;
-            const deltaY = endY - startY;
-            const minSwipeDistance = 50;
-            
-            // Check if horizontal swipe is more significant than vertical
-            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
-                if (deltaX > 0) {
-                    previousSlide();
-                } else {
-                    nextSlide();
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
                 }
-            }
+            });
+        });
+
+        // Counter animation for achievement numbers
+        function animateCounters() {
+            const counters = document.querySelectorAll('.achievement-number');
             
-            isSwipeActive = false;
-        });
-
-        // Auto-advance functionality (optional - can be enabled/disabled)
-        let autoAdvanceTimer;
-        const autoAdvanceDelay = 30000; // 30 seconds
-
-        function startAutoAdvance() {
-            autoAdvanceTimer = setInterval(nextSlide, autoAdvanceDelay);
+            counters.forEach(counter => {
+                const target = parseInt(counter.innerText.replace(/\D/g, ''));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        const suffix = counter.innerText.replace(/[0-9]/g, '');
+                        counter.innerText = Math.floor(current) + suffix.replace(/[0-9]/g, '');
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = counter.innerText; // Keep original text
+                    }
+                };
+                
+                updateCounter();
+            });
         }
 
-        function stopAutoAdvance() {
-            clearInterval(autoAdvanceTimer);
+        // Trigger counter animation when achievements section is visible
+        const achievementsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    achievementsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const achievementsSection = document.querySelector('#achievements');
+        if (achievementsSection) {
+            achievementsObserver.observe(achievementsSection);
         }
 
-        // Stop auto-advance on user interaction
-        document.addEventListener('click', stopAutoAdvance);
-        document.addEventListener('keydown', stopAutoAdvance);
-        document.addEventListener('touchstart', stopAutoAdvance);
+        // Mobile menu toggle (basic implementation)
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
 
-        // Uncomment the line below to enable auto-advance
-        // startAutoAdvance();
-
-        // Accessibility improvements
-        slides.forEach((slide, index) => {
-            slide.setAttribute('aria-label', `Slide ${index + 1} de ${totalSlides}`);
-            slide.setAttribute('role', 'tabpanel');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         });
 
-        // Add focus management for better keyboard navigation
-        document.addEventListener('keydown', function(e) {
+        // Handle keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Close mobile menu if open
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Add focus-visible class for keyboard navigation
+        document.addEventListener('keydown', (e) => {
             if (e.key === 'Tab') {
-                // Handle tab navigation within slides if needed
+                document.body.classList.add('using-keyboard');
             }
         });
 
-        // Initialize
-        showSlide(0);
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('using-keyboard');
+        });
 
-        // Add CSS animation for pulse effect
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes pulse {
-                0%, 100% { transform: scale(1); opacity: 0.9; }
-                50% { transform: scale(1.05); opacity: 1; }
-            }
-        `;
-        document.head.appendChild(style);
+        // Performance: Lazy load images if any are added later
+        if ('IntersectionObserver' in window) {
+            const lazyImages = document.querySelectorAll('[data-lazy]');
+            
+            const lazyImageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.lazy;
+                        lazyImage.classList.remove('lazy');
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+            
+            lazyImages.forEach(lazyImage => {
+                lazyImageObserver.observe(lazyImage);
+            });
+        }
+
+        console.log('🚀 Daniele Maia Portfolio loaded successfully!');
+        console.log('📊 Ready to drive customer experience excellence and operational efficiency.');
     </script>
-
-<script>
-    let currentSlideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.progress-dot');
-    const currentSlideEl = document.getElementById('currentSlide');
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
-            }
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-        currentSlideEl.textContent = index + 1;
-        currentSlideIndex = index;
-    }
-
-    function nextSlide() {
-        let nextIndex = (currentSlideIndex + 1) % slides.length;
-        showSlide(nextIndex);
-    }
-
-    function previousSlide() {
-        let prevIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-        showSlide(prevIndex);
-    }
-
-    function goToSlide(index) {
-        showSlide(index);
-    }
-
-    // Inicia no primeiro slide
-    showSlide(currentSlideIndex);
-</script>
-
 </body>
 </html>
